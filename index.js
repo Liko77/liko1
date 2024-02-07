@@ -1,4 +1,4 @@
-const choices = ["rock", "paper", "scissors"];
+const choices = ["daş", "kağız", "qayçı"];
 const PlayerDisplay = document.getElementById("PlayerDisplay");
 const ComputerDisplay = document.getElementById("ComputerDisplay");
 const ResultDisplay = document.getElementById("ResultDisplay");
@@ -15,16 +15,16 @@ function playGame(palyerChoice) {
     } 
      else{
         switch (palyerChoice) {
-            case "rock":
-             result = (computerChocie === "scissors") ? "UDDUN!" : "UDUZDUN!";
+            case "daş":
+             result = (computerChocie === "qayçı") ? "UDDUN!" : "UDUZDUN!";
                 break;
 
-                case "paper":
-                    result = (computerChocie === "rock") ? "UDDUN!" : "UDUZDUN!";
+                case "kağız":
+                    result = (computerChocie === "daş") ? "UDDUN!" : "UDUZDUN!";
                        break;
                        
-                case "scissors":
-                    result =(computerChocie === "paper") ? "UDDUN!" : "UDUZDUN!";
+                case "qayçı":
+                    result =(computerChocie === "kağız") ? "UDDUN!" : "UDUZDUN!";
                        break;
         }
     }
