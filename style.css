@@ -14,8 +14,10 @@ h1{
     margin-bottom: 30px;
 }
 .choices button{
-    font-size: 7.5rem;
-    min-height: 160px;
+    font-size: 3rem;
+    width: 80px;
+    min-height: 140px;
+    max-height: 200px;
     margin: 0 10px;
     border-radius: 250px;
     background-color: hsl(200, 100%, 50%);
