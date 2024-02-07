@@ -10,25 +10,25 @@ function playGame(palyerChoice) {
     let result = "";
 
     if (palyerChoice === computerChocie) {
-        result = "IT'S A TIE!";
+        result = "BƏRABƏR";
 
     } 
      else{
         switch (palyerChoice) {
             case "rock":
-             result = (computerChocie === "scissors") ? "YOU WIN!" : "YOU LOSE!";
+             result = (computerChocie === "scissors") ? "UDDUN!" : "UDUZDUN!";
                 break;
 
                 case "paper":
-                    result = (computerChocie === "rock") ? "YOU WIN!" : "YOU LOSE!";
+                    result = (computerChocie === "rock") ? "UDDUN!" : "UDUZDUN!";
                        break;
                        
                 case "scissors":
-                    result =(computerChocie === "paper") ? "YOU WIN!" : "YOU LOSE!";
+                    result =(computerChocie === "paper") ? "UDDUN!" : "UDUZDUN!";
                        break;
         }
     }
-    PlayerDisplay.textContent = `PLAYER: ${palyerChoice}`;
-    ComputerDisplay.textContent = `COMPUTER: ${computerChocie}`;
+    PlayerDisplay.textContent = `OYUNÇU: ${palyerChoice}`;
+    ComputerDisplay.textContent = `COMP: ${computerChocie}`;
     ResultDisplay.textContent = result;
 }
